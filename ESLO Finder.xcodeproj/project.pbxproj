@@ -13,6 +13,8 @@
 		C9D9B2622637019500FC05FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D9B2602637019500FC05FC /* Main.storyboard */; };
 		C9D9B2642637019800FC05FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D9B2632637019800FC05FC /* Assets.xcassets */; };
 		C9D9B2672637019800FC05FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D9B2652637019800FC05FC /* LaunchScreen.storyboard */; };
+		C9D9B27026373BA900FC05FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9B26F26373BA900FC05FC /* Extensions.swift */; };
+		C9D9B27426374ED500FC05FC /* UUIDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9B27326374ED500FC05FC /* UUIDKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C9D9B2632637019800FC05FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D9B2662637019800FC05FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9D9B2682637019800FC05FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D9B26F26373BA900FC05FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C9D9B27326374ED500FC05FC /* UUIDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		C9D9B2592637019500FC05FC /* ESLO Finder */ = {
 			isa = PBXGroup;
 			children = (
+				C9D9B27226374EC700FC05FC /* Models */,
 				C9D9B25A2637019500FC05FC /* AppDelegate.swift */,
 				C9D9B25C2637019500FC05FC /* SceneDelegate.swift */,
 				C9D9B25E2637019500FC05FC /* ViewController.swift */,
@@ -63,8 +68,17 @@
 				C9D9B2632637019800FC05FC /* Assets.xcassets */,
 				C9D9B2652637019800FC05FC /* LaunchScreen.storyboard */,
 				C9D9B2682637019800FC05FC /* Info.plist */,
+				C9D9B26F26373BA900FC05FC /* Extensions.swift */,
 			);
 			path = "ESLO Finder";
+			sourceTree = "<group>";
+		};
+		C9D9B27226374EC700FC05FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9D9B27326374ED500FC05FC /* UUIDKey.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,8 @@
 				C9D9B25F2637019500FC05FC /* ViewController.swift in Sources */,
 				C9D9B25B2637019500FC05FC /* AppDelegate.swift in Sources */,
 				C9D9B25D2637019500FC05FC /* SceneDelegate.swift in Sources */,
+				C9D9B27426374ED500FC05FC /* UUIDKey.swift in Sources */,
+				C9D9B27026373BA900FC05FC /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
