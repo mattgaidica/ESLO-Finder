@@ -140,13 +140,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             if absRSSI > 0 {
                 let floatVal = 1-CGFloat(absRSSI).converting(from: 40...110, to: 0...1)
                 view?.alpha = floatVal
-                if (absRSSI <= 80) {
+                if (absRSSI <= 60) {
+                    view?.markerTintColor = .green
+                } else if (absRSSI <= 85) {
                     view?.markerTintColor = .yellow
                 } else {
                     view?.markerTintColor = .red
                 }
             } else {
-                view?.alpha = 0.1
+                view?.alpha = 0.0
                 view?.markerTintColor = .white
             }
             view?.displayPriority = .required
